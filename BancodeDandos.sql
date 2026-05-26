@@ -1,0 +1,14 @@
+CREATE DATABASE MyPillas;
+USE MyPillas;
+
+CREATE TABLE ASSINANTES(
+    id_assinante INT PRIMARY KEY AUTO_INCREMENT,
+    razao_social VARCHAR(100) NOT NULL,
+    cnpj VARCHAR(18) NOT NULL,
+    data_fundacao DATE NOT NULL,
+    responsavel VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    estado VARCHAR(30) NOT NULL,
+    cidade VARCHAR(100) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
